@@ -7,7 +7,7 @@ spec:
   triggers:
   - type: git
     provider: github
-    context: github
+    context: andres-caylent
     name: master
     repo: andres-caylent/devops-toolkit
     events:
@@ -49,7 +49,7 @@ spec:
       type: git-clone
       arguments:
         repo: vfarcic/argocd-production
-        git: github
+        git: andres-caylent
       stage: deploy
     define_production:
       image: vfarcic/argocd-pipeline:1.0.ee76b7a
